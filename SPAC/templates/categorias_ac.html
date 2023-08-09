@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <title>Categorias</title>
+
+    <ul>
+        <!-- Itera sobre categorias_ac_list -->
+        {% for categorias in categorias_ac_list %}
+        <!-- Display Categorias -->
+        <!-- <li><a href="http://127.0.0.1:8000/matricula/{{ aluno.id }}">{{ aluno.nome }}</li></a> -->
+            <li>{{ categorias.descricao }}</li></a>
+        
+            <hr/>
+            <!-- Se categorias_ac_list estiver vazia -->
+            {% empty %}
+                <li>Não há Categorias cadastradas.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

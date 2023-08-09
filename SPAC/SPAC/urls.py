@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from pages import views
+from pages.views import categorias_ac_ListView, cadastro_ac
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cadastro_ac/', views.cadastro_ac, name='cadastro_ac'),
+    path('categorias_ac/', categorias_ac_ListView, name='categorias_ac'), 
+    path('cadastro_ac/', cadastro_ac, name='cadastro_ac'),
 ]
