@@ -18,7 +18,8 @@
             <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light p-0">
                 <div class="container-md">
                     <a class="navbar-brand p-0" href="#" style="color: #2c3f1f;">
-                        <img src="images/logo.png" alt="Logo da aplicação" width="50">
+                        {% load static %}
+                        <img src="{% static 'logo.png' %}" alt="Logo da aplicação" width="50">
                         SPAC
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

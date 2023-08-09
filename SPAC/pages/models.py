@@ -44,8 +44,8 @@ class Coordenador(models.Model):
 
 class CategoriaAc(models.Model):
     # pk = ID
-    descricao = models.CharField(max_length=200)
-    carga_horaria_maxima = models.DecimalField(max_digits=3, decimal_places=1)
+    descricao = models.CharField('Descrição', max_length=200)
+    carga_horaria_maxima = models.IntegerField()
 
     def __str__(self):
         return f'{self.descricao}'

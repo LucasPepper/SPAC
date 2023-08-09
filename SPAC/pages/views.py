@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .models import AC, Aluno, CategoriaAc
+from .models import CategoriaAc
 
 # from .forms import FileFieldForm
 
