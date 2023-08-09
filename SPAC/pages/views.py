@@ -34,4 +34,4 @@ def categorias_ac_ListView(request, *args, **kwargs):
 #             return self.form_invalid(form)
 
 def cadastro_ac(request):
-    return render(request, '/cadastro_ac.html')
+    return render(request, 'cadastro_ac.html')
